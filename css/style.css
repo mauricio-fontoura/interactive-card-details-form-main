@@ -1,0 +1,189 @@
+body {
+    font-size: 18px;
+    font-family: 'Space Grotesk', sans-serif;
+    background-image: url(../images/bg-main-desktop.png);
+    background-repeat: no-repeat;
+    background-size: 35%;
+}
+.color-error{
+    color: var(--error-register);
+}
+/* Container All Production */
+.wrapper {
+    height: 94vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+    margin: 1em;
+}
+
+/* Container Cards */
+.container-illustration-card {
+    display: grid;
+    margin-block: 8.5em;
+    color: var(--white);
+    letter-spacing: 2px;
+    user-select: none;
+}
+
+/* Column Front Card */
+.card-front-content img {
+    width: 68%;
+}
+
+.card-front-content {
+    grid-row: 1;
+    position: relative;
+    display: grid;
+    color: var(--white);
+    margin-inline-start: 8em;
+    width: 90%;
+}
+
+.front-card-information img {
+    width: 20%;
+}
+
+.front-card-information {
+    position: absolute;
+    display: grid;
+    width: 60%;
+    grid-template-rows: 50px 100px 45px;
+    margin: 1.5em;
+    align-items: flex-end;
+}
+
+.card-front-content .Number {
+    grid-row: 2;
+    font-size: 21pt;
+    letter-spacing: 3px;
+}
+
+.card-front-content .Name-date {
+    display: flex;
+    justify-content: space-between;
+    font-size: 10pt;
+    text-transform: uppercase;
+}
+.card-exp-date{
+    display: flex;
+}
+/* Column Back Card */
+.card-back-content {
+    position: relative;
+    display: flex;
+    justify-content: right;
+    margin-inline-start: 12em;
+    align-items: center;
+}
+.back-card-cvc {
+    position: absolute;
+    padding-inline-end: 3.5em;
+    font-size: 16px; 
+}
+
+/* Column Register */
+.container-register {
+    grid-column: 2;
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 8pt;
+    font-weight: 600;
+    letter-spacing: 1px;
+    user-select: none;
+}
+
+.container-register form {
+    display: grid;
+    grid-template-columns: 150px 150px;
+    gap: 3em 1em;
+    color: var(--primary-color);
+}
+
+.container-register input {
+    width: 100%;
+    margin-top: 0.5em;
+    padding-block: 8px;
+    padding-inline: 1em;
+    border-radius: 0.4em;
+    border: 1px solid var(--gray-scale);
+    font-family: var(--font-style);
+    font-size: 16px;
+    cursor: pointer;
+    outline: 1px;
+}
+
+.block-form-name {
+    grid-column: span 2;
+}
+
+.block-form-number {
+    grid-column: span 2;
+}
+
+.block-form-exp {
+    grid-column: 1;
+}
+
+.block-form-cvc {
+    grid-column: 2;
+}
+
+
+
+.btn-register {
+    font-family: var(--font-style);
+    grid-column: span 2;
+    padding-block: 1em;
+    border-radius: 0.5em;
+    background: var(--primary-color);
+    color: var(--white);
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Container Register Complete */
+.container-completion {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    color: var(--gray-scale);
+    user-select: none;
+}
+
+.content-completion {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.content-completion h1 {
+    padding-top: 1em;
+    font-weight: 500;
+    color: black;
+}
+
+.btn-continue {
+    padding-inline: 23%;
+    height: 50px;
+    background: var(--primary-color);
+    color: var(--white);
+    border-radius: 0.6em;
+    margin-top: 3em;
+    font-size: 18px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.attribution {
+ font-size: 11px;
+ text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

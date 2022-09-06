@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animation.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!--  Column All Production   -->
+  <main class="wrapper">
+    <!--  Column Cards   -->
+    <section class="container-illustration-card">
+      
+      <!--  Front Card  -->
+      <div class="card-front-content">
+        <img class="card" src="images/bg-card-front.png" alt="">
+        <div class="front-card-information">
+          <img src="images/card-logo.svg" alt="">
+          <div class="Number">
+            <p id="card-number">0000 0000 0000 0000</p>
+          </div>
+          <div class="Name-date">
+            <p id="card-name" class="front-card-name">Felicia Leire</p>
+            <div class="card-exp-date">
+              <p id="card-exp">00/</p>
+              <p id="card-date">22</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  Back Card  -->
+      <div class="card-back-content">
+        <img src="images/bg-card-back.png" alt="">
+        <div class="back-card-cvc">
+          <p id="card-cvc"></p>
+        </div>
+      </div>
+    </section>
+    <!--  Column Register   -->
+    <section class="container-register">
+      <!-- Row Name  -->
+      <form action="#">
+        <div class="block-form-name">
+          <label for="print-name">CARDHOLDER NAME</label>
+          <div>
+            <input type="text" maxlength="20" placeholder="Felicia Leire" class="delSpecial" id="print-name">
+            <p id="name-error" class="color-error"></p>
+          </div>
+        </div>
+        <!-- Row Number  -->
+        <div class="block-form-number">
+          <label for="print-number">CARD NUMBER</label>
+          <div>
+            <input type="text" maxlength="19" placeholder="e.g. 1234 5678 9123 0000" class="delSpecial"
+              id="print-number">
+            <p id="number-error" class="color-error"></p>
+          </div>
+        </div>
+        <!-- Row Exp/Date  -->
+        <div class="block-form-exp">
+          <label for="print-exp">EXP. DATE</label>
+          <label for="print-date">(MM/YY)</label>
+          <div>
+            <input type="text" max="12" maxlength="2" placeholder="MM" class="delSpecial" id="print-exp"
+              style="width: 70px;">
+            <input type="text" min="22" maxlength="2" placeholder="YY" class="delSpecial" id="print-date"
+              style="width: 70px;">
+            <p id="expDate-error" class="color-error"></p>
+          </div>
+        </div>
+        <!-- Row CVC  -->
+        <div class="block-form-cvc">
+          <label for="print-cvc">CVC</label>
+          <input maxlength="3" type="text" placeholder="e.g. 123" class="delSpecial" id="print-cvc">
+          <p id="cvc-error" class="color-error"></p>
+        </div>
+        <button id="btn-confirm" class="btn-register">Confirm</button>
+      </form>
+    </section>
+    <!--  Column Completion   -->
+    <section class="container-completion">
+      <div class="content-completion">
+        <div>
+          <img src="images/icon-complete.svg" alt="">
+        </div>
+        <div class="content-completion">
+          <h1>THANK YOU!</h1>
+          <br>
+          <p>We've added your card details</p>
+        </div>
+        <!--  Row Buttom    -->
+        <button class="btn-continue">Continue</button>
+      </div>
+    </section>
+  </main>
+  <!--  Column Credits  -->
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

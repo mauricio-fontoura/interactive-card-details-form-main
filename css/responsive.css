@@ -1,0 +1,238 @@
+/* My screen*/
+@media only screen and (max-width:1366px) {
+   .wrapper {
+      height: 92vh;
+   }
+
+   .container-illustration-card {
+      margin-block: 3em;
+   }
+
+   .card-front-content {
+      width: 78.3%;
+   }
+
+   .card-front-content .card {
+      width: 85%;
+   }
+
+   .front-card-information {
+      width: 75%;
+   }
+
+   .container-register {
+      align-items: center;
+   }
+}
+
+@media only screen and (max-width:1024px) {
+   body {
+      background-size: 32% 110%;
+      background-repeat: no-repeat;
+   }
+
+   .container-illustration-card {
+      margin-block: 8em;
+   }
+
+   .card-front-content {
+      width: 90%;
+      margin-inline: 2em;
+   }
+
+   .front-card-information {
+      grid-template-rows: 30px 90px 40px;
+   }
+
+   .card-front-content .Number {
+      font-size: 18pt;
+   }
+
+   .card-back-content img {
+      width: 100%;
+   }
+
+   .card-back-content {
+      width: 75%;
+      margin-inline: 6em;
+   }
+
+   .container-register {}
+}
+
+@media only screen and (max-width:800px) {
+   body {
+      background-image: url(../images/bg-main-mobile.png);
+      background-size: 100% 36%;
+   }
+   .wrapper {
+      justify-content: center;
+   }
+
+   .container-illustration-card {
+      margin-block: 2em;
+      margin-left: 3em;
+   }
+
+   .card-front-content {
+      grid-row: 2;
+      z-index: 2;
+      width: 70%;
+      top: -110px;
+   }
+
+   .container-register {
+      grid-column: 1;
+   }
+
+   .container-completion {
+      grid-column: 1;
+   }
+
+   .card-back-content {
+      width: 60%;
+   }
+}
+
+@media only screen and (max-width:720px) {
+   body {
+      background-image: url(../images/bg-main-mobile.png);
+      background-size: 100% 49%;
+   }
+
+   .card-front-content {
+      grid-row: 2;
+      top: -107px;
+      width: 78%;
+   }
+
+   .card-back-content {
+      width: 65%;
+   }
+}
+
+@media only screen and (max-width:420px) {
+   body {
+      background-size: 100% 35%;
+   }
+
+   .container-illustration-card {
+      margin-block: 2em;
+      margin-left: 0em;
+   }
+
+   .card-front-content {
+      width: 100%;
+      top: -80px;
+      font-size: 14pt;
+      margin-inline: 0;
+   }
+
+   .front-card-information {
+      grid-template-rows: 30px 80px 30px;
+      margin: 1em;
+      align-items: flex-end;
+   }
+
+   .card-front-content .Number {
+      font-size: 14.5pt;
+   }
+
+   .card-back-content {
+      width: 80%;
+      margin-inline: 4.3em;
+   }
+
+   .back-card-cvc {
+      padding-inline: 2.6em;
+      font-size: 9pt;
+   }
+
+}
+
+@media only screen and (max-width:393px) {
+   body {
+      background-size: 100% 35.5%;
+   }
+
+   .card-front-content {
+      top: -71px;
+      width: 95%;
+   }
+
+   .front-card-information {
+      grid-template-rows: 30px 65px 30px;
+   }
+
+   .card-front-content .Number {
+      font-size: 12.5pt;
+   }
+
+   .card-back-content {
+      width: 82%;
+      margin-inline-start: 3.3em;
+   }
+
+   .back-card-cvc {
+      padding-inline: 3.5em;
+      font-size: 8pt;
+   }
+}
+
+@media only screen and (max-width:375px) {
+   body {
+      background-size: 100% 33%;
+   }
+
+   .card-front-content {
+      top: -75px;
+      width: 95%;
+   }
+
+   .card-front-content .Number {
+      font-size: 12.5pt;
+   }
+
+   .card-back-content {
+      width: 76%;
+      margin-inline: 3.8em;
+   }
+
+   .back-card-cvc {
+      padding-inline: 2.7em;
+   }
+
+   .container-illustration-card {
+      margin-block: 1em;
+   }
+}
+
+@media only screen and (max-width:360px) {
+   body {
+      background-size: 100% 34%;
+   }
+
+   .card-front-content {
+      top: -64px;
+      margin-inline-start: 1em;
+      width: 88%;
+   }
+
+   .card-front-content .Number {
+      font-size: 11pt;
+   }
+
+   .card-back-content {
+      width: 70%;
+      margin-inline-start: 5em;
+   }
+
+   .back-card-cvc {
+      padding-inline: 2.2em;
+      font-size: 9pt;
+   }
+
+   .container-register form {
+      grid-template-columns: 150px 100px;
+   }
+}

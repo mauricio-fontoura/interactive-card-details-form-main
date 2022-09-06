@@ -1,0 +1,8 @@
+:root{
+    --primary-color:hsl(278, 68%, 11%);
+    --white:hsl(0, 0%, 100%);
+    --gray-scale:hsl(270, 3%, 87%);
+    --font-style:font-family: 'Space Grotesk', sans-serif;
+    --select-input:linear-gradient(hsl(249, 99%, 64%) to hsl(278, 94%, 30%));
+    --error-register:hsl(0, 100%, 66%);
+}

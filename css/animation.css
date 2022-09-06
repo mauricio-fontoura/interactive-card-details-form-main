@@ -1,0 +1,6 @@
+.container-register input:hover {
+    
+    border-color: 1px solid var(--select-input);
+   
+   
+}
